@@ -47,9 +47,20 @@ forthChild.addEventListener("mouseover", function(event) {
     event.target.style.backgroundColor = "";
     }, 500);
 })
+//Text-Box Created Here
+let introContainer = document.querySelector(".intro");
+let textBox = document.createElement("textarea");
+let sumbitNameButton = document.createElement("button")
+sumbitNameButton.textContent = "Submit Email";
+sumbitNameButton.addEventListener('dblclick', function(){
+    alert("Thanks! We will get back to you shortly!");
+    sumbitNameButton.style.backgroundColor = "red";
+    sumbitNameButton.textContent = "Email submitted!";
+}); /*TO DO -- MAKE BUTTON UNCLICKABLE AFERWARDS */
+let enterNameMessage = document.createElement("p");
+enterNameMessage.textContent = "Enter your email to stay updated on the where abouts of the Fun Bus!";
+introContainer.appendChild(textBox);
+introContainer.appendChild(enterNameMessage);
+introContainer.appendChild(sumbitNameButton);
 
 //Double Click Photo
-const funBusPicture = document.querySelector(".main-navigation .container .logo-heading")
-funBusPicture.addEventListener("select", function(event){
-    event.target.style.color = "green";
-})
