@@ -1,9 +1,41 @@
 // Your code goes here
+
+//Navigation Anchors
 const firstChild = document.querySelector("nav a:nth-child(1)");
-firstChild.style.color = "green";
 const secondChild = document.querySelector("nav a:nth-child(2)");
-secondChild.style.color = "green";
 const thirdChild = document.querySelector("nav a:nth-child(3)");
-thirdChild.style.color = "green";
 const forthChild = document.querySelector("nav a:nth-child(4)");
-forthChild.style.color = "green";
+
+//Anchors 
+
+firstChild.addEventListener("mouseover", function(event) {
+    event.target.style.backgroundColor = "yellow";
+
+    setTimeout(function() {
+    event.target.style.backgroundColor = "";
+    }, 500);
+})
+
+secondChild.addEventListener("mouseover", function(event) {
+    event.target.style.backgroundColor = "yellow";
+
+    setTimeout(function() {
+    event.target.style.backgroundColor = "";
+    }, 500);
+})
+
+thirdChild.addEventListener("mouseover", function(event) {
+    event.target.style.backgroundColor = "yellow";
+
+    setTimeout(function() {
+    event.target.style.backgroundColor = "";
+    }, 500);
+})
+
+forthChild.addEventListener("mouseover", function(event) {
+    event.target.style.backgroundColor = "yellow";
+
+    setTimeout(function() {
+    event.target.style.backgroundColor = "";
+    }, 500);
+})
