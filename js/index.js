@@ -9,6 +9,7 @@ const forthChild = document.querySelector("nav a:nth-child(4)");
 //Anchors 
 
 firstChild.addEventListener("mouseover", function(event) {
+    event.target.style.borderRadius = "30%";
     event.target.style.backgroundColor = "yellow";
 
     setTimeout(function() {
@@ -17,6 +18,7 @@ firstChild.addEventListener("mouseover", function(event) {
 })
 
 secondChild.addEventListener("mouseover", function(event) {
+    event.target.style.borderRadius = "30%";
     event.target.style.backgroundColor = "yellow";
 
     setTimeout(function() {
@@ -25,6 +27,7 @@ secondChild.addEventListener("mouseover", function(event) {
 })
 
 thirdChild.addEventListener("mouseover", function(event) {
+    event.target.style.borderRadius = "30%";
     event.target.style.backgroundColor = "yellow";
 
     setTimeout(function() {
@@ -33,6 +36,7 @@ thirdChild.addEventListener("mouseover", function(event) {
 })
 
 forthChild.addEventListener("mouseover", function(event) {
+    event.target.style.borderRadius = "30%";
     event.target.style.backgroundColor = "yellow";
 
     setTimeout(function() {
