@@ -56,6 +56,7 @@ sumbitNameButton.addEventListener('dblclick', function(){
     alert("Thanks! We will get back to you shortly!");
     sumbitNameButton.style.backgroundColor = "red";
     sumbitNameButton.textContent = "Email submitted!";
+    
 }); /*TO DO -- MAKE BUTTON UNCLICKABLE AFERWARDS */
 let enterNameMessage = document.createElement("p");
 enterNameMessage.textContent = "Enter your email to stay updated on the where abouts of the Fun Bus!";
@@ -63,4 +64,33 @@ introContainer.appendChild(textBox);
 introContainer.appendChild(enterNameMessage);
 introContainer.appendChild(sumbitNameButton);
 
-//Double Click Photo
+//Colored Sections
+const sectionChild1 = document.querySelector(".home section:nth-child(2)")
+sectionChild1.addEventListener("mouseover", function(){
+    sectionChild1.style.backgroundColor = "#A1A0A0";
+    sectionChild1.style.borderRadius = "2%";
+
+    setTimeout(function() {
+        sectionChild1.style.backgroundColor = "";
+    }, 1000);
+})
+
+const sectionChild2 = document.querySelector(".home section:nth-child(3)")
+sectionChild2.addEventListener("mouseover", function(){
+    sectionChild2.style.backgroundColor = "#7F7E7E";
+    sectionChild2.style.borderRadius = "2%";
+
+    setTimeout(function() {
+        sectionChild2.style.backgroundColor = "";
+    }, 1000);
+})
+
+const sectionChild3 = document.querySelector(".home section:nth-child(4)")
+sectionChild3.addEventListener("mouseover", function(){
+    sectionChild3.style.backgroundColor = "#646464";
+    sectionChild3.style.borderRadius = "2%";
+
+    setTimeout(function() {
+        sectionChild3.style.backgroundColor = "";
+    }, 1000);
+})
