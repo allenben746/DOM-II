@@ -4,6 +4,15 @@ window.addEventListener('load', (event) => {
     alert('Welcome to the Fun Bus!');
 })
 
+//Fun Bus Logo
+const funBusLogo = document.querySelector(".nav-container h1");
+funBusLogo.addEventListener('mouseover', function(){
+    funBusLogo.style.textShadow = '4px 4px grey';
+
+    setTimeout(function() {
+        funBusLogo.style.textShadow = '';
+        }, 500);
+})
 //Navigation Anchors
 const firstChild = document.querySelector("nav a:nth-child(1)");
 const secondChild = document.querySelector("nav a:nth-child(2)");
@@ -47,9 +56,14 @@ forthChild.addEventListener("mouseover", function(event) {
     event.target.style.backgroundColor = "";
     }, 500);
 })
+
 //Text-Box Created Here
 let introContainer = document.querySelector(".intro");
 let textBox = document.createElement("textarea");
+textBox.addEventListener("drop", function(event){
+    event.preventDefault();
+    alert("reeee")
+})
 let sumbitNameButton = document.createElement("button")
 sumbitNameButton.textContent = "Submit Email";
 sumbitNameButton.addEventListener('dblclick', function(){
@@ -95,7 +109,7 @@ sectionChild3.addEventListener("mouseover", function(){
     }, 1000);
 })
 
-//Larger Destinations
+//Heavier Font Destinations
 const destination1 = document.querySelector(".content-pick .destination:nth-child(1)")
 const destination2 = document.querySelector(".content-pick .destination:nth-child(2)")
 const destination3 = document.querySelector(".content-pick .destination:nth-child(3)")
@@ -125,3 +139,22 @@ destination3.addEventListener("mouseover", function(){
     }, 1000);
 
 })
+
+//Sign Up Button Alerts
+//Button 1
+const signUpButton1 = document.querySelector(".content-pick .destination:nth-child(1) .btn");
+signUpButton1.addEventListener("click", function(){
+    alert("You are signed up!");
+})
+//Button 2
+const signUpButton2 = document.querySelector(".content-pick .destination:nth-child(2) .btn");
+signUpButton2.addEventListener("click", function(){
+    alert("You are signed up!");
+})
+//Button 3
+const signUpButton3 = document.querySelector(".content-pick .destination:nth-child(3) .btn");
+signUpButton3.addEventListener("click", function(){
+    alert("You are signed up!");
+})
+// const signUpButton2
+// const signUpButton3
