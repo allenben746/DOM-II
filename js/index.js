@@ -94,3 +94,34 @@ sectionChild3.addEventListener("mouseover", function(){
         sectionChild3.style.backgroundColor = "";
     }, 1000);
 })
+
+//Larger Destinations
+const destination1 = document.querySelector(".content-pick .destination:nth-child(1)")
+const destination2 = document.querySelector(".content-pick .destination:nth-child(2)")
+const destination3 = document.querySelector(".content-pick .destination:nth-child(3)")
+
+
+destination1.addEventListener("mouseover", function(){
+    destination1.style.fontWeight = "bold";
+
+    setTimeout(function() {
+        destination1.style.fontWeight = "normal";
+    }, 1000);
+
+})
+destination2.addEventListener("mouseover", function(){
+    destination2.style.fontWeight = "bold";
+
+    setTimeout(function() {
+        destination2.style.fontWeight = "normal";
+    }, 1000);
+
+})
+destination3.addEventListener("mouseover", function(){
+    destination3.style.fontWeight = "bold";
+
+    setTimeout(function() {
+        destination3.style.fontWeight = "normal";
+    }, 1000);
+
+})
