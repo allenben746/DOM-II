@@ -3,7 +3,15 @@
 window.addEventListener('load', (event) => {
     alert('Welcome to the Fun Bus!');
 })
+//Header Color
+const navHeader = document.querySelector(".main-navigation");
+navHeader.addEventListener("mouseover", function(){
+    navHeader.style.backgroundColor = "darkgrey";
 
+    setTimeout(function() {
+        navHeader.style.backgroundColor = '';
+        }, 2000);
+})
 //Fun Bus Logo
 const funBusLogo = document.querySelector(".nav-container h1");
 funBusLogo.addEventListener('mouseover', function(){
@@ -156,5 +164,16 @@ const signUpButton3 = document.querySelector(".content-pick .destination:nth-chi
 signUpButton3.addEventListener("click", function(){
     alert("You are signed up!");
 })
-// const signUpButton2
-// const signUpButton3
+//Copyright Warning
+const copyrightFooter = document.querySelector("footer");
+const copyrightMessage = document.querySelector("footer p");
+copyrightFooter.addEventListener("mouseover", function(event){
+    copyrightFooter.style.backgroundColor = "red";
+
+        copyrightMessage.addEventListener("click", function(){
+            copyrightMessage.textContent = "We will sue.";
+            copyrightMessage.stlye.color = "yellow";
+
+        })
+    })
+
